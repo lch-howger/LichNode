@@ -15,6 +15,8 @@ http.createServer(function (req, res) {
 
     } else if (req.url.startsWith('/add') && req.method === 'post') {
         console.log("postokok");
+    } else {
+        console.log("fail");
     }
 
 }).listen(80, function () {
