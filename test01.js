@@ -20,7 +20,8 @@ http.createServer(function (req, res) {
         res.end('endpostok')
     } else {
         console.log('fail');
-        res.end('endfail');
+        var resquestUrl = req.url;
+        res.end('endfail' + resquestUrl);
     }
 
 }).listen(80, function () {
