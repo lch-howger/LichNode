@@ -10,6 +10,12 @@ app.post('/add', function (req, res) {
 
 });
 
+app.get('/commentList',function (req, res) {
+
+    commentListHandler(req, res);
+
+})
+
 app.post('/commentList',function (req, res) {
 
     commentListHandler(req, res);
