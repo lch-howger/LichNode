@@ -5,9 +5,6 @@ module.exports = function (req, res) {
 
     fileManager.readFile(config.path, function (data) {
 
-        var list = JSON.parse(data);
-        
-
         res.send(data);
 
     })
